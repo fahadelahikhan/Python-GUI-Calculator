@@ -1,70 +1,68 @@
-# Python GUI Calculator
+# Python GUI Calculator 📱
 
-## Description
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-This is a simple graphical user interface (GUI) calculator built using Python and Tkinter. The calculator supports basic arithmetic operations including addition, subtraction, multiplication, division, and percentage calculations. The application features an intuitive interface with buttons for numbers, operations, and clear functionality.
+A simple graphical user interface calculator implemented in Python using the Tkinter library.
 
-## Features
+## 📜 About
+This project demonstrates how to create a basic calculator with a graphical user interface using Python's Tkinter library. It's an excellent example for learning GUI programming basics and implementing mathematical operations in a user-friendly way.
 
-- Basic arithmetic operations: addition, subtraction, multiplication, and division.
-- Percentage calculation.
-- Clear function to reset the input.
-- Easy-to-use interface with buttons for each digit and operation.
+## ✨ Features
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Percentage calculations
+- Clear functionality
+- Error handling for invalid expressions
+- User-friendly interface
+- Responsive design
 
-## Requirements
+## 🚀 Quick Start
 
-- Python 3.x
-- Tkinter (usually included with Python)
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fahadelahikhan/Python-GUI-Calculator.git
+   cd Python-GUI-Calculator
+   ```
 
-## Installation
+2. Run the calculator:
+   ```bash
+   python Basic_Calculator.py
+   ```
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/fahadelahikhan/Python-GUI-Calculator.git
-    ```
-2. **Navigate to the project directory:**
-    ```bash
-    cd Python-GUI-Calculator
-    ```
+### Basic Usage
+```python
+# The calculator provides a graphical interface with buttons for numbers and operations
+# Example calculation: 5 + 3 * 2
+# Click the buttons in the following order:
+# 5 -> + -> 3 -> * -> 2 -> =
+# The result will be displayed in the entry field
+```
 
-## Usage
+### Example Calculation
+```python
+# Calculate (5 + 3) * 2 using the calculator
+# Click sequence:
+# 5 -> + -> 3 -> ) -> * -> 2 -> =
+# Result: 16
+```
 
-1. **Run the calculator application:**
-    ```bash
-    python Basic_Calculator.py
-    ```
-2. The calculator GUI will open. Use the buttons to perform calculations.
+## 📖 Documentation
+### How It Works
+The calculator works by:
+1. Capturing user input through button clicks
+2. Building an expression string
+3. Evaluating the expression using Python's `eval()` function with safety checks
+4. Displaying the result or error message
 
-## Code Overview
+The mathematical operations follow standard order of operations:
+```
+Parentheses -> Exponents -> Multiplication/Division -> Addition/Subtraction
+```
 
-The main components of the code include:
-
-- **Calculator Class:** Manages the calculator's state and handles button clicks.
-- **GUI Setup:** Creates the Tkinter window and adds buttons for digits and operations.
-- **Operations Handling:** Processes input and performs calculations.
-
-## Example
-
-To calculate `100 * 10%`:
-1. Open the calculator.
-2. Press the buttons: `1 0 0 * 1 0 % =`
-3. The result will be displayed.
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions or find any bugs, please create an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or suggestions, feel free to reach out to the project maintainer:
-
-- Fahad Elahi Khan
-- [GitHub Profile](https://github.com/fahadelahikhan)
+## ⚖️ License
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-Thank you for using the Python GUI Calculator!
+> **Note**: This implementation is for educational purposes. Always be cautious when evaluating expressions from untrusted sources.
